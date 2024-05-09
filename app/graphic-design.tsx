@@ -8,7 +8,7 @@ const GraphicDesign = () => {
   return (
     <div>
       <div className=" p-4   mx-auto relative z-10  w-full pt-20 md:pt-32">
-        <div className="text-4xl md:pb-8 md:text-7xl text-center bg-clip-text text-transparent bg-gradient-to-b from-purple-500 to-sky-200 bg-opacity-50">
+        <div className="text-4xl md:pb-8 md:text-7xl text-center bg-clip-text text-transparent bg-gradient-to-b from-[#deb992] to bg-neutral-400 bg-opacity-50">
           Graphic Design <br />
         </div>
 

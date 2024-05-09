@@ -71,7 +71,7 @@ const Pricing = () => {
   return (
     <div
       className="w-full  md:items-center md:justify-center
-     bg-black/[0.96] antialiased 
+     bg-[#001f33]/[0.96] antialiased 
      bg-grid-white/[0.02] relative overflow-hidden"
     >
       <Navbar
@@ -82,7 +82,7 @@ const Pricing = () => {
       />
 
       <div className="flex items-center justify-center flex-col   ">
-        <div className="text-5xl pb-10 md:pb-20 text-slate-300 px-6 text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-500 bg-opacity-50">
+        <div className="text-5xl pb-10 md:pb-20 text-slate-300 px-6 text-center bg-clip-text text-transparent bg-gradient-to-b from-[#deb992] to bg-neutral-400 bg-opacity-50">
           Simple Pricing <br /> Choose your plan
         </div>
         <div className="grid md:grid-cols-3 gap-6 px-6 md:w-4/5 2xl:w-3/4 cursor-pointer pb-20  items-start ">
@@ -92,7 +92,7 @@ const Pricing = () => {
               className="h-full flex flex-col justify-between border rounded-3xl px-6  "
             >
               <div className={plan.style}>
-                <div className="text-4xl flex  items-center font-medium">
+                <div className="text-4xl flex  items-center font-medium text-[#deb992] ">
                   {plan.name}
                   {/* render feature tag only for enterprise tab*/}
                   {plan.feature === "Contact Us" && (
@@ -101,7 +101,9 @@ const Pricing = () => {
                     </div>
                   )}
                 </div>
-                <div className="text-3xl pt-6 ">{plan.price}</div>
+                <div className="text-3xl pt-6 text-[#deb992]  ">
+                  {plan.price}
+                </div>
                 <div className="py-6">{plan.description}</div>
 
                 <ul>
