@@ -64,7 +64,7 @@ const SliderOne = () => {
               alt="logo"
               width={500}
               height={500}
-              className="rounded-2xl"
+              className="rounded-2xl h-[300px] object-fit"
             />
           </div>
         </>
